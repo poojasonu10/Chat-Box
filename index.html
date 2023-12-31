@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--------------Boots Link------------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Snacks Card</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-----------------Animation-------------------->
+  <style>
+    #anim {
+        opacity: 0;
+        transform: translateY(60px);
+        animation: moveup 1.5s linear forwards;
+    }
+    /****************Animation******************/
+    @keyframes moveup {
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    ::placeholder {
+            color: #fff;
+        }
+  </style>
+</head>
+<body class="bg-body-tertiary" data-bs-theme="dark" style="font-family:Verdana;">
+
+    <div class="container mt-5 p-3 d-flex justify-content-evenly flex-column shadow-lg rounded" id="anim" style="max-width: fit-content; background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+        <!---------------Header---------------->
+        <div class="container rounded shadow p-2" style="background: linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+            <h2 class="border-bottom border-light pb-2">Chat Messages <small><i class="fa-solid fa-arrow-right fs-5"></i></small></h2>
+            <div class="d-flex align-items-center" >
+                <div class="img-fluid">
+                    <img src="pic.jpg" alt="" width="50" class="rounded-circle img-thumbnail" style="background: linear-gradient(270deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);">
+                </div>
+                <div class="d-flex flex-column p-1">
+                    <a href="#" class="text-light text-decoration-none" style="font-weight: 550;">Aerum</a>
+                    <span><small style="color: #b3b3b3c5;">Active<i class="fa-solid fa-circle p-1 text-success" style="font-size: 7px;"></i></small></span>
+                </div>
+            </div>
+        </div>
+        <!-------------1st--------------->
+        <div class="container d-flex justify-content-between align-items-center my-2 rounded shadow" style="background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+            <div class="img-fluid">
+                <img src="pic.jpg" class="rounded-circle" width="50">
+            </div>
+        <p class="me-auto p-2 mt-3" >Hello. How are you today?</p>
+        <span class="mt-auto text-body-secondary">11:00</span>
+        </div>
+        <!-------------2nd--------------->
+        <div class="container my-2 rounded p-1 shadow" style="background: linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);">
+            <div class="img-fluid float-end m-2">
+                <img src="pic3.jpg" class="rounded-circle" width="50">
+            </div>
+        <p class="p-1">Hey! I'm fine. Thanks for asking!</p>
+        <span class="text-secondary">11:01</span>
+        </div>
+        <!-------------3rd--------------->
+        <div class="container d-flex justify-content-between align-items-center my-2 rounded shadow" style="background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);">
+            <div class="img-fluid">
+                <img src="pic.jpg" class="rounded-circle" width="50">
+            </div>
+        <p class="me-auto p-2 mt-3" >Sweet! So, what do you wanna do today?</p>
+        <span class="mt-auto text-body-secondary">11:00</span>
+        </div>
+        <!-------------4th--------------->
+        <div class="container my-2 rounded p-1 shadow" style="background: linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);">
+            <div class="img-fluid float-end m-2">
+                <img src="pic3.jpg" class="rounded-circle" width="50">
+            </div>
+        <p class="p-1">Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+        <span class="p-1 text-secondary">11:05</span>
+        </div>
+        <div class="container shadow rounded-pill d-flex align-items-center justify-content-around mt-2 p-1" style="background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);">
+            <label for="msg"><i class="fa-solid fa-face-smile"></i>
+            <input type="text" placeholder="Write a message....." class="border-0 bg-transparent" id="msg"></label>
+            <button type="button" class="btn"><i class="fa-regular fa-paper-plane"></i></button>
+        </div>
+    </div>
+</body>
+</html>
